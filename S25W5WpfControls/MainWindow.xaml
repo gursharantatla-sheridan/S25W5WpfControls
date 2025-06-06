@@ -14,12 +14,19 @@
         <Image Height="100" Canvas.Left="289" Canvas.Top="36" Width="167" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Car.png"/>
         <GroupBox Height="153" Header="Hobbies" Width="187" Canvas.Left="43" Canvas.Top="189" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Canvas>
-                <CheckBox x:Name="chkSwimming" Content="Swimming" Canvas.Left="10" Canvas.Top="10"/>
+                <CheckBox x:Name="chkSwimming" Content="Swimming" Canvas.Left="10" Canvas.Top="10" IsChecked="True"/>
                 <CheckBox x:Name="chkGardening" Content="Gardening" Canvas.Left="10" Canvas.Top="41"/>
                 <CheckBox x:Name="chkGolfing" Content="Golfing" Canvas.Left="10" Canvas.Top="72"/>
             </Canvas>
         </GroupBox>
         <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="235" Canvas.Top="217" Click="btnGetHobbies_Click"/>
         <Label x:Name="lblOutput" Content="" Canvas.Left="539" Canvas.Top="296" Height="91" Width="218" Background="#FFC2F3FB"/>
+        <GroupBox Height="146" Header="Gender" Width="152" Canvas.Left="496" Canvas.Top="36" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Canvas>
+                <RadioButton x:Name="rdoFemale" Content="Female" Canvas.Left="10" Canvas.Top="14"/>
+                <RadioButton x:Name="rdoMale" Content="Male" Canvas.Left="10" Canvas.Top="45"/>
+                <RadioButton x:Name="rdoOther" Content="Other" Canvas.Left="10" Canvas.Top="76"/>
+            </Canvas>
+        </GroupBox>
     </Canvas>
 </Window>
