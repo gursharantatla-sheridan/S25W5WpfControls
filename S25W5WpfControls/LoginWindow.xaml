@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S25W5WpfControls"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="313" Width="364" FontSize="20" FontWeight="Bold">
+        Title="LoginWindow" Height="313" Width="364" FontSize="20" FontWeight="Bold" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Canvas>
         <Label Content="Username" Canvas.Left="59" Canvas.Top="63"/>
         <Label Content="Password" Canvas.Left="65" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBox x:Name="txtUsername" Canvas.Left="168" TextWrapping="Wrap" Canvas.Top="67" Width="120"/>
         <PasswordBox x:Name="pswPassword" Canvas.Left="168" Canvas.Top="109" Width="120"/>
-        <Button x:Name="btnLogin" Content="Login" Canvas.Left="59" Canvas.Top="169" Height="48" Width="93" Background="#FF69DC83" Click="btnLogin_Click"/>
-        <Button x:Name="btnClose" Content="Close" Canvas.Left="195" Canvas.Top="169" Height="48" Width="93" Background="#FFEDAEAE" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnClose_Click"/>
+        <Button x:Name="btnLogin" Content="Login" Canvas.Left="59" Canvas.Top="169" Height="48" Width="93" Background="#FF69DC83" Click="btnLogin_Click" IsDefault="True"/>
+        <Button x:Name="btnClose" Content="Close" Canvas.Left="195" Canvas.Top="169" Height="48" Width="93" Background="#FFEDAEAE" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnClose_Click" IsCancel="True"/>
 
     </Canvas>
 </Window>
