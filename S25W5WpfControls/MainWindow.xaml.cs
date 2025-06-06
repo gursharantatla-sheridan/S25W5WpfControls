@@ -20,5 +20,19 @@ namespace S25W5WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            if (chkSwimming.IsChecked == true)
+                hobbies += chkSwimming.Content + "\n";
+            if (chkGardening.IsChecked == true)
+                hobbies += chkGardening.Content + "\n";
+            if (chkGolfing.IsChecked == true)
+                hobbies += chkGolfing.Content + "\n";
+
+            lblOutput.Content = hobbies;
+        }
     }
 }

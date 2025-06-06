@@ -19,7 +19,7 @@
                 <CheckBox x:Name="chkGolfing" Content="Golfing" Canvas.Left="10" Canvas.Top="72"/>
             </Canvas>
         </GroupBox>
-        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="235" Canvas.Top="217"/>
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="235" Canvas.Top="217" Click="btnGetHobbies_Click"/>
         <Label x:Name="lblOutput" Content="" Canvas.Left="539" Canvas.Top="296" Height="91" Width="218" Background="#FFC2F3FB"/>
     </Canvas>
 </Window>
