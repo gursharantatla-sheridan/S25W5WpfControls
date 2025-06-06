@@ -34,5 +34,17 @@ namespace S25W5WpfControls
 
             lblOutput.Content = hobbies;
         }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            if (rdoFemale.IsChecked == true)
+                lblOutput.Content = rdoFemale.Content;
+            else if (rdoMale.IsChecked == true)
+                lblOutput.Content = rdoMale.Content;
+            else if (rdoOther.IsChecked == true)
+                lblOutput.Content = rdoOther.Content;
+            else
+                lblOutput.Content = "Please select your gender";
+        }
     }
 }
