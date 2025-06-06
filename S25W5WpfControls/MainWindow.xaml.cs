@@ -60,5 +60,10 @@ namespace S25W5WpfControls
                 lblOutput.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -5,36 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S25W5WpfControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
+        Title="MainWindow" Height="554" Width="800" FontSize="20" FontWeight="Bold">
     <Canvas>
-        <WrapPanel Height="110" Width="187" Canvas.Left="43" Canvas.Top="36" Background="#FFEAF9CE">
+        <WrapPanel Height="110" Width="187" Canvas.Left="40" Canvas.Top="73" Background="#FFEAF9CE">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </WrapPanel>
-        <Image Height="100" Canvas.Left="289" Canvas.Top="36" Width="167" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Car.png"/>
-        <GroupBox Height="153" Header="Hobbies" Width="187" Canvas.Left="43" Canvas.Top="189" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Image Height="100" Canvas.Left="286" Canvas.Top="73" Width="167" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/Car.png"/>
+        <GroupBox Height="153" Header="Hobbies" Width="187" Canvas.Left="40" Canvas.Top="226" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Canvas>
                 <CheckBox x:Name="chkSwimming" Content="Swimming" Canvas.Left="10" Canvas.Top="10" IsChecked="True"/>
                 <CheckBox x:Name="chkGardening" Content="Gardening" Canvas.Left="10" Canvas.Top="41"/>
                 <CheckBox x:Name="chkGolfing" Content="Golfing" Canvas.Left="10" Canvas.Top="72"/>
             </Canvas>
         </GroupBox>
-        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="235" Canvas.Top="217" Click="btnGetHobbies_Click"/>
-        <Label x:Name="lblOutput" Content="" Canvas.Left="539" Canvas.Top="296" Height="91" Width="218" Background="#FFC2F3FB"/>
-        <GroupBox Height="146" Header="Gender" Width="152" Canvas.Left="496" Canvas.Top="36" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="232" Canvas.Top="254" Click="btnGetHobbies_Click"/>
+        <Label x:Name="lblOutput" Content="" Canvas.Left="569" Canvas.Top="333" Height="91" Width="185" Background="#FFC2F3FB" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <GroupBox Height="146" Header="Gender" Width="152" Canvas.Left="493" Canvas.Top="73" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Canvas>
                 <RadioButton x:Name="rdoFemale" Content="Female" Canvas.Left="10" Canvas.Top="14"/>
                 <RadioButton x:Name="rdoMale" Content="Male" Canvas.Left="10" Canvas.Top="45"/>
                 <RadioButton x:Name="rdoOther" Content="Other" Canvas.Left="10" Canvas.Top="76"/>
             </Canvas>
         </GroupBox>
-        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="653" Canvas.Top="55" Click="btnGetGender_Click"/>
-        <ComboBox x:Name="cmbCities" Canvas.Left="110" Canvas.Top="362" Width="120" SelectionChanged="cmbCities_SelectionChanged">
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="650" Canvas.Top="92" Click="btnGetGender_Click"/>
+        <ComboBox x:Name="cmbCities" Canvas.Left="107" Canvas.Top="399" Width="120" SelectionChanged="cmbCities_SelectionChanged">
             <ComboBoxItem Content="Toronto"/>
             <ComboBoxItem Content="Vancouver"/>
             <ComboBoxItem Content="Calgary"/>
             <ComboBoxItem Content="Montreal"/>
         </ComboBox>
-        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="235" Canvas.Top="362" Click="btnGetCity_Click"/>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="232" Canvas.Top="399" Click="btnGetCity_Click"/>
+        <ListBox x:Name="lstPlanets" Height="189" Width="170" Canvas.Left="369" Canvas.Top="254" SelectionMode="Extended">
+            <ListBoxItem Content="Mercury"/>
+            <ListBoxItem Content="Venus"/>
+            <ListBoxItem Content="Earth"/>
+            <ListBoxItem Content="Mars"/>
+        </ListBox>
+        <Menu Height="35" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="New"/>
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Save"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cu_t"/>
+                <MenuItem Header="_Copy"/>
+                <MenuItem Header="_Paste"/>
+            </MenuItem>
+        </Menu>
     </Canvas>
 </Window>
