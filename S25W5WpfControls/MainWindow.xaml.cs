@@ -46,5 +46,19 @@ namespace S25W5WpfControls
             else
                 lblOutput.Content = "Please select your gender";
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            lblOutput.Content = cmbCities.Text;
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbCities.SelectedItem != null)
+            {
+                //lblOutput.Content = cmbCities.Text;
+                lblOutput.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
+            }
+        }
     }
 }
